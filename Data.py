@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-def load_data(*args):
-    data = pd.read_csv("./nbasalariespoints.csv")
+def load_data(path, *args):
+    data = pd.read_csv(path)
     data = data.dropna()
     lst = []
     for header in args:
